@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .widget {
+    width: 33%;
+    margin: 1rem auto;
+  }
+}
+
+.widget {
+  line-height: 26px;
+}
+.widget .callout {
+  background-color: #333;
+  border-radius: 4px;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.widget .callout:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  bottom: -4px;
+  right: 1.5rem;
+  background-color: #333;
+  transform: rotate(45deg);
+}
+.widget .widget-main {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.8rem;
+}
+.widget .widget-main button {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.widget .widget-progress {
+  background: #f2f2f2;
+  height: 8px;
+}
+.widget .widget-progress .widget-progress-bar {
+  background-color: #eb5757;
+  height: 8px;
+}
+
+.widget form {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.widget-actions {
+  display: flex;
+}
+.widget-actions button + button {
+  margin-left: 1rem;
+}
+
+.widget button,
+.widget .input {
+  flex: 1;
+}
+
+.btn {
+  font-weight: 500;
+  font-size: 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  color: #828282;
+  padding: 0.5rem 1rem;
+  height: 40px;
+}
+.btn.btn-primary {
+  background-color: #2f80ed;
+  color: #fff;
+}
+
+.highlight {
+  color: #eb5757;
+}
+.explanation {
+  font-size: 14px;
+  color: #56ccf2;
+}
+
+.input {
+  position: relative;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  display: flex;
+  margin-right: 1rem;
+  height: 40px;
+  padding: 0.5rem 1rem;
+}
+.input:before {
+  color: #828282;
+  content: "$";
+  font-size: 18px;
+  line-height: 1.4rem;
+}
+.input input {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0;
+  padding-left: 0.5rem;
+}
